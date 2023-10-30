@@ -1,0 +1,243 @@
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px auto;
+}
+
+.product__new-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  margin: 0 auto;
+}
+
+.product__add-product {
+  display: flex;
+  width: 396px;
+  height: 52px;
+  margin: 0;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #726EFA;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.product__add-product:hover {
+  background: #352DF2;
+}
+
+.product__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product__input {
+  display: flex;
+  box-sizing: border-box;
+  width: 396px;
+  height: 52px;
+  padding: 8px 12px;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #9FA1A5;
+  background: #FDFDFD;
+  color: #1E1E1E;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.product__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.product__title {
+  margin: 0;
+  padding: 0;
+  color: #352DF2;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.product__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 396px;
+}
+
+.product__name {
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product__item-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product__item-delete {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product__remove-button {
+  display: flex;
+  width: 396px;
+  height: 52px;
+  margin: 0;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #726EFA;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  z-index: 10;
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+.dropdown__button {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 396px;
+  height: 52px;
+  margin: 0;
+  padding: 6px 8px 6px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(159, 161, 165, 1);
+  background: none;
+  color: #1e1e1e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.dropdown__button-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #DACDFF;
+}
+
+.dropdown__item-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #DACDFF;
+}
+
+.dropdown__list {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 396px;
+  border-radius: 8px;
+  background: rgba(253, 253, 253, 1);
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  margin: 4px 0 0;
+  padding: 0;
+  position: absolute;
+}
+.dropdown_is-open::after {
+  z-index: 5;
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dropdown__item {
+  z-index: 10;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 396px;
+  height: 36px;
+  margin: 0;
+  padding: 6px 8px 6px 16px;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #8e8e8e;
+  background: none;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+.dropdown__item:last-child {
+  border-bottom: none;
+  border-radius: 0px 0px 8px 8px;
+}
+.dropdown__item:first-child {
+  border-top: none;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.dropdown__item:hover {
+  background: rgba(178, 176, 255, 1);
+}

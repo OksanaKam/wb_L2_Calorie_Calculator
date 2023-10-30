@@ -1,0 +1,128 @@
+.diet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.diet__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.diet__total {
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.diet__add-product {
+  display: flex;
+  width: 396px;
+  height: 52px;
+  margin: 0;
+  padding: 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #726EFA;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.diet__add-product:hover {
+  background: #352DF2;
+}
+
+.diet__input {
+  display: flex;
+  box-sizing: border-box;
+  width: 396px;
+  height: 52px;
+  padding: 8px 12px;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #9FA1A5;
+  background: #FDFDFD;
+  color: var(--Primary-Black, #1E1E1E);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.diet__products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.diet__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.diet__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 396px;
+}
+
+.diet__name {
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.diet__item-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.diet__item-delete {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.diet__chart {
+  width: 396px;
+  height: 396px;
+}
